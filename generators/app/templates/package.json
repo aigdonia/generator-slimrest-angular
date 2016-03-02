@@ -1,5 +1,5 @@
 {
-  "name": "tarqim",
+  "name": "<%= app_name%>",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -43,6 +43,5 @@
   "scripts": {
     "test": "grunt test"
   },
-  "author": "Ahmed Gaber <aigdonia@gmail.com>",
   "license": "MIT"
 }

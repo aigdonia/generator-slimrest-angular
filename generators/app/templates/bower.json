@@ -1,8 +1,5 @@
 {
-  "name": "tarqim-lis",
-  "authors": [
-    "Ahmed <aigdonia@gmail.com>"
-  ],
+  "name": "<%= app_name%>",
   "description": "SlimREST Angular application",
   "main": "",
   "moduleType": [

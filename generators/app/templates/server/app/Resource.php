@@ -1,5 +1,5 @@
 <?php
-namespace Tarqim;
+namespace <%= app_name %>;
 
 abstract class Resource {
 	// for generating JWT auth token

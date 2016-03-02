@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('lis-web',[
+angular.module('<%= app_name%>',[
 	'ngAnimate',
 	'ngCookies',
 	'ngResource',
@@ -10,5 +10,3 @@ angular.module('lis-web',[
 	'satellizer',
 	'angular-icheck'
 ]);
-
-angular.module('lis-web') ;

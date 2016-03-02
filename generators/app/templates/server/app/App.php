@@ -1,6 +1,6 @@
 <?php
 
-namespace Tarqim;
+namespace <%= app_name %>;
 
 class App {
 	public $app;
@@ -36,7 +36,7 @@ class App {
 		    return $logger;
 		};
 		$this->app->getContainer()['errorHandler'] = function ($c) {
-	    return new \Tarqim\ErrorHandler($c['Logger']);
+	    return new \<%= app_name %>\ErrorHandler($c['Logger']);
 		};
 		$this->app->getContainer()['notFoundHandler'] = function ($container) {
 			return function ($request, $response) use ($container) {

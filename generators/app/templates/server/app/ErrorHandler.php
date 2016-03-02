@@ -1,6 +1,6 @@
 <?php
 
-namespace Tarqim;
+namespace <%= app_name %>;
 
 use Psr\Http\Message\ ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;

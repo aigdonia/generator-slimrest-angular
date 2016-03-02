@@ -5,9 +5,9 @@ angular.module('<%= app_name%>')
 		$stateProvider
 		.state('dashboard', {
 		  url: '/',
-		  templateUrl: 'modules/dashboard/home.html'
+		  templateUrl: 'components/navbar/navbar.html'
 		});
 	})
-	.controller('DashboardCtrl', function($scope){
+	.controller('NAvbarCtrl', function($scope){
 		$scope.n='t';
 	});

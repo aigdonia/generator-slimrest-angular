@@ -6,5 +6,4 @@ server/composer.lock
 composer.phar
 .sass-cache/
 .tmp/
-Resources/
 node_modules

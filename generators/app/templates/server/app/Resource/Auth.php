@@ -1,7 +1,7 @@
 <?php
-namespace Tarqim\Resource;
+namespace <%= app_name %>\Resource;
 
-use \Tarqim\Resource as Resource;
+use \<%= app_name %>\Resource as Resource;
 
 class Auth extends Resource{
 

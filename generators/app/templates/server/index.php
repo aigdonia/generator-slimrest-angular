@@ -3,7 +3,7 @@
 require_once "vendor/autoload.php";
 $conf = require 'config.php';
 
-$app = new \Tarqim\App($conf);
+$app = new \<%= app_name %>\App($conf);
 
 // Register Entity Resource
 // init resources
