@@ -1,0 +1,9 @@
+client/bower_components
+client/dist/
+server/vendor
+server/log
+server/composer.lock
+composer.phar
+.sass-cache/
+.tmp/
+node_modules
