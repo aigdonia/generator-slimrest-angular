@@ -1,0 +1,36 @@
+header.fixed-header h1{
+	text-align: center
+}
+
+
+header.fixed-header p{
+	text-align: center;
+}
+
+header.fixed-header .install-cmd{
+	display: block;
+	background-color: black;
+	color: white;
+	font-size: 10px;
+	font-family: monospace;
+	text-align: center;
+	font-weight: 600;
+	padding: 9px 2px;
+	margin-bottom: 15px;
+}
+
+
+.get-generator .head{
+	display: block;
+	background-color: #c0c0c0;
+	color: black;
+	padding: 4px 0px 2px 15px;
+}
+
+footer{
+	bottom:15px;
+}
+
+footer p{
+	margin-bottom: 5px;
+}
