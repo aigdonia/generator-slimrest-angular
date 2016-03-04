@@ -34,6 +34,9 @@ module.exports = yeoman.generators.Base.extend({
 	var kebab_name = _.kebabCase(this.props.app_name);
 	// global copy all files
 	this.fs.copy( this.templatePath('**/*.*'), this.destinationPath());
+	this.fs.copy( this.templatePath('_gitignore'), this.destinationPath('.gitignore'));
+	this.fs.copy( this.templatePath('_bowerrc'), this.destinationPath('.bowerrc'));
+	this.fs.copy( this.templatePath('_jshintrc'), this.destinationPath('.jshintrc'));
 	// inject app name in selected files
     this.fs.copyTpl( this.templatePath('package.json'), this.destinationPath('package.json'), { app_name: kebab_name } );
     this.fs.copyTpl( this.templatePath('bower.json'), this.destinationPath('bower.json'), { app_name: kebab_name } );
@@ -44,6 +47,15 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   install: function () {
-    // this.installDependencies();
+	this.log('# '+ chalk.bold('Update composer to latest version') );
+	var update_composer = this.spawnCommand('./composer.phar', ['self-update']);
+	var generator = this;
+	update_composer.on('close', function(){
+		generator.log('# '+ chalk.bold('Install Backend Dependencies') );
+		generator.spawnCommand('./composer.phar', ['-d=./server/', 'install'])
+	});
+
+	this.log('# '+ chalk.bold('Install frontend Dependencies') );
+	this.installDependencies();
   }
 });
