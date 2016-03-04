@@ -8,5 +8,4 @@ angular.module('<%= app_name%>',[
 	'ngTouch',
 	'ui.router',
 	'satellizer',
-	'angular-icheck'
 ]);
