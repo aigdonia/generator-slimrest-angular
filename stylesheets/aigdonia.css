@@ -34,3 +34,15 @@ footer{
 footer p{
 	margin-bottom: 5px;
 }
+
+code{
+	color: #B52A1D;
+}
+
+code.line{
+	background-color: lightgray;
+	display: block;
+	text-align: center;
+	margin: 10px 0;
+	padding: 2px 0;
+}
