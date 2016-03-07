@@ -9,3 +9,7 @@ angular.module('<%= app_name%>',[
 	'ui.router',
 	'satellizer',
 ]);
+
+angular.module('<%= app_name%>').config(function($locationProvider){
+	$locationProvider.html5Mode(true);
+});
