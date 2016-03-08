@@ -1,5 +1,7 @@
 # generator-slimrest-angular
 
+[![Join the chat at https://gitter.im/aigdonia/generator-slimrest-angular](https://badges.gitter.im/aigdonia/generator-slimrest-angular.svg)](https://gitter.im/aigdonia/generator-slimrest-angular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 <!-- [![Github All Releases](https://img.shields.io/github/downloads/aigdonia/generator-slimrest-angular/total.svg?style=flat-square)]() -->
 [![npm](https://img.shields.io/npm/dt/generator-slimrest-angular.svg?style=flat-square)]()
 [![npm](https://img.shields.io/npm/v/generator-slimrest-angular.svg?style=flat-square)]()
