@@ -8,6 +8,8 @@ class App {
 
 	function __construct($conf){
 		$this->app = new \Slim\App;
+		// Enable Site CORS
+		$this->setCORSEnabled();
 		// configure error logger
 		$this->registerErrorLogger();
 		// configure the database
@@ -25,6 +27,14 @@ class App {
 		$this->app->run();
 	}
 
+	function setCORSEnabled(){
+		$this->app->add(function($req, $res, $next){
+			$res = $res->withHeader('Access-Control-Allow-Origin', '*')->withHeader('Access-Control-Allow-Headers','Authorization, Keep-Alive,User-Agent, If-Modified-Since, Cache-Control, Content-Type, Origin');
+			$res = $next($req, $res);
+			return $res;
+		});
+	}
+
 	function registerErrorLogger(){
 		$this->app->getContainer()['Logger'] = function($container) {
 	    $logger = new \Monolog\Logger('logger');
@@ -36,7 +46,7 @@ class App {
 		    return $logger;
 		};
 		$this->app->getContainer()['errorHandler'] = function ($c) {
-	    return new \<%= app_name %>\ErrorHandler($c['Logger']);
+	    return new \Tarqim\ErrorHandler($c['Logger']);
 		};
 		$this->app->getContainer()['notFoundHandler'] = function ($container) {
 			return function ($request, $response) use ($container) {

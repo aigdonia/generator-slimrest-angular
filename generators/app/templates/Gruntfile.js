@@ -531,7 +531,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
 		if(target == 'api') {
-			return grunt.task.run(['watch:php','php']);
+			return grunt.task.run(['php']);
 		}
 
 		if (target === 'dist') {
