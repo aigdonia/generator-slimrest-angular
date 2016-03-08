@@ -1,6 +1,6 @@
 {
   "name": "generator-slimrest-angular",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Yeoman generator to build AngularJS+Jade+SASS application with SlimPHP 3.0 RESTful backend",
   "homepage": "http://aigdonia.github.io/generator-slimrest-angular",
   "author": {
